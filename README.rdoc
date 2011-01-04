@@ -1,0 +1,18 @@
+== Penetration Test Report Generator
+
+PTRG is a project geared towards generating penetration testing reports based on 
+templates. The concept is that nearly all the tools used during a penetration 
+test can export xml data files. Using these files generating a report can be 
+a much simpler task if the report can import this data within the appropriate 
+sections of the report.
+
+Currently this project is a work in progress (WIP) within the early stages of 
+development. In the future this project may be merged with another project related 
+to the scheduling and managing of penetration tests.
+
+== Features
+
+* Ability to import XML data from various tools (nessus, nmap, core impact, cenzic, accunetix)
+* Generation of HTML and PDF format reports
+* Extremely customizable templates for report generation
+
