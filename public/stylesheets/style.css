@@ -1,102 +1,200 @@
+body {
+	background-color: #bababa;
+	margin-top: 20px;
+	font-family: arial, helvetica, sans-serif;
+}
 
-html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,li	{
-	margin:0;
-	padding:0;
-	}
-	
-.background { 
-	background:url('../images/bg_drop.png') repeat-y center;
+a:hover {text-decoration: none;}
+
+a, a:visited {
+	color: #d55c3b;
+	font-family: arial, helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 11px;
+}
+
+.top_cap { 
+	background:url('../images/top_cap_drop.png') no-repeat bottom center;
+	height: 28px;
 	margin: 0px auto;
 }
 
-body { 
-	background: url("../images/gradient_bg.jpg") repeat-x #363636;
-	text-align: center;
-	width: 100%;
-	height: 100%;
-	padding: 0px;
-	margin: 20px 0 20px 0;
-	font-family: arial, helvetica, sans-serif;
-	font-size: 11px;
-	color: #333;
+.bottom_cap { 
+	background: url('../images/bottom_cap_drop.png') no-repeat center;
+	height: 46px;
+	margin: 0px auto;
 }
 
-#container	{
-	width:780px;
-	height:650px;
-	margin:0px auto;
-	
-	text-align: left;
-	}
-	
-#logo {
-	float: left;
-}	
 
-.menu {
+#background {
+
+	background:url('../images/bg_drop.png') repeat-y center;
+	margin: 0px auto;
+} 
+#header { 
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom: 20px;
+	width: 600px;
+	height: 100px;
+	background-color: #ffffff;
+	
+
+}
+
+#content { 
+	margin-left:auto;
+	margin-right:auto;
+	width: 700px;
+	height: 500px;
+	background-color: #ffffff;
+
+}
+
+.appname {
+	text-align: center;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+	color: #06a;
+
+}
+
+.main_heading {
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #616D7E;
 	font-family: arial, helvetica, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
-	color: #777;
+	color: #fff;
+	width: 50%;
+	padding: 3px;
+
+}
+
+.login_fields {
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #eee;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #616D7E;
+	word-spacing: 5px;
+	width: 50%;
+	padding: 3px;
+
+}
+
+.login_menu {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #444;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+	word-spacing: 2px;
+	padding: 2px;
+}
+
+.nav_location {
+	margin-left:auto;
+	margin-right:auto;
 	text-align: left;
+	background-color: #616D7E;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	word-spacing: 5px;
+	padding: 3px;
+
+}
+.nav_location a {
+	text-decoration: none;
+	color: #fff;
 }
 
-#logo {
-	padding-right: 70px;
-}
-#search {
-
+.nav_location a:hover {
+	text-decoration: none;
+	color: #ddd;
 }
 
-#stats{
-	margin-top: 20px;
-	padding: 5px;
-}
-#clear {
-	clear:both;
+.account_menu {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #444;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #fff;
+	word-spacing: 2px;
+	padding: 0px;
 }
 
-#appname {
+a.account_menu {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover.account_menu {
+	text-decoration: underline;
+}
+
+.heading {
+	background-color: #223a5e; /*#8a2828; /*#9b0034; */ /*#C9BE62;*/
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	padding: 3px;
+}
+
+.table_header 
+{
+	border-color: #aaa;
+	border-width: 1px;
+	border-bottom-style: solid;
+	text-decoration: underline;
+	background-color: #eff1ee;
 	text-align: center;
-}
-#reports
-{
+	font-size: 12px;
+	font-weight: bold;
+	color: #a28374;
+}	
 
-}
-
-#repitem1
+.table_item1 
 {
-	border: 1px;
-	border-top-style: solid;
+	border-color: #aaa;
+	border-width: 1px;
 	border-bottom-style: solid;
-	border-color:#888888;
-	background-color: #999;
-	color: #FFFFFF;
+	background-color: #d2d3a9;
+	text-align: center;
+	font-size: 10px;
 	font-weight: bold;
-}
-#repitem2
-{ 
-	background-color: #990000;
-	color: #FFFFFF;
-	font-weight: bold;
-}
-#repitem3
-{
-	border: 1px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-color:#888888;
-	background-color: #FFF;
-	color: #000000;
-	font-weight: bold;
-}
+	color: #797878;
+}	
 
-a {
-	text-decoration: none;
-	font-size: 11px;
-	color: #777;
+.table_item2 
+{
+	border-color: #aaa;
+	border-width: 1px;
+	border-bottom-style: solid;
+	background-color: #eff1ee;
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	color: #797878;
+}	
+
+.overall_stats {
+	border-color: #223a5e;
+	border-bottom-style: dashed;
+	border-width: 1px;
+	font-size: 10px;
+	font-weight: bold;
 }
-a:hover {
-	color: #FF0000;
-	text-decoration: none;
+.overall_stats img {
+	padding-left: 20px;
 }

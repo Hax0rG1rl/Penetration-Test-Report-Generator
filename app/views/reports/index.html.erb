@@ -1,38 +1,112 @@
-<div class="background" id="background">
-	<div id = container>
+	<div class="nav_location">
 
-		<div id=logo><%= image_tag("logo.jpg")%></div>
-
-		<div id=menu class=menu>
-		<a href="blahblah.com">New Report</a> |
-		<a href="blahblah.com">Existing Report</a> |
-		<a href="blahblah.com">Client List</a> |
-		<%= link_to "Logout", destroy_user_session_path %>
-		</div>
-		<div id=search>
-			Search: <input type=text> <input type=submit value=Submit>
-		</div>
-		<div id=stats>
-			<b>Cross Site Scripting: <b><font color=#d23442>345</font></b><p>
-			<b>Buffer Overflows: <b><font color=#d23442>450</font></b><p>
-			<b>Remote File Inclusion: <b><font color=#d23442>5</font></b><p>
-			
-		</div>
-			<div id=clear></div>
-			<div id=appname><h1>Penetration Test Report Generator v1.0</h1></div>
-	<div id=reports>
-		Last 5 Reports<br>
-		<div id=repitem1>Hess</div>
-		<div id=repitem3>Chubb</div>
-		<div id=repitem1>BATA</div>
-		<div id=repitem3>Hess</div>
-		<div id=repitem1>Chubb</div>
-
-		
-	</div>
+		<font color=red size=1>>></font>  <a href="">home</a> 
+		<font color=red size=1>>></font>  <a href="">new report</a> 
+		<font color=red size=1>>></font>  <a href="">existing report</a> 	
+		<font color=red size=1>>></font>  <a href="">client list</a>
 	</div>
 	
-</div>
+	<table class="account_menu" cellpadding=3 cellspacing=0 width=100%>
+		<td width=75% bgcolor=#ffffff>
+			<span style="font-weight: bold; font-size: 10px; color: #000;">welcome bannedit</span>
+			
+		</td>
+		<td align=right>
+			<%= link_to "logout", destroy_user_session_path(:login), :class =>"account_menu" %> |</td>
+		<td align=right><a class="account_menu" href="blah">my stats</a> | </td>
+		<td align=right><a class="account_menu" href="blah">my reports</a></td>
+	</table>
 
-</html>
+
+
+	<div class="overall_stats">
+	<p style="font-weight:bold; font-style: italic; font-size: 12px; color: #02407c;">Stats</p>
+	<p>Cross Site Scripting: <font color=red>345</font></p>
+	<p>Buffer Overflows: <font color=red>450</font></p>
+	<p>Remote File Inclusion: <font color=red>5</font></p>
+	<center>
+		<%= image_tag("charts-types.png") %>
+		<%= image_tag("datetime.png") %>
+		<%= image_tag("multiaxes.png") %>
+	</center>
+	</div>
+	
+	<p>
+	<div class="heading">
+		<font color=red size=1>//</font>  Recent Reports 
+	</div>
+	
+	<div>
+		<table width=100% cellspacing=0 cellpadding=0>
+			<td class="table_header">client</td>
+			<td class="table_header">author</td>
+			<td class="table_header">date</td>
+			<td class="table_header">risk</td>
+			<tr>
+		<!-- data goes here -->		
+			<td class="table_item1">Hess</td>
+			<td class="table_item1">David D. Rude II</td>
+			<td class="table_item1">12/24/2010</td>
+			<td class="table_item1">Low</td>
+			<tr>			
+				
+			<td class="table_item2">Hess</td>
+			<td class="table_item2">David D. Rude II</td>
+			<td class="table_item2">12/24/2010</td>
+			<td class="table_item2">Low</td>
+			<tr>			
+				
+			<td class="table_item1">Hess</td>
+			<td class="table_item1">David D. Rude II</td>
+			<td class="table_item1">12/24/2010</td>
+			<td class="table_item1">Low</td>
+			<tr>			
+				
+			<td class="table_item2">Hess</td>
+			<td class="table_item2">David D. Rude II</td>
+			<td class="table_item2">12/24/2010</td>
+			<td class="table_item2">Low</td>
+			<tr>			
+
+			<td class="table_item1">Hess</td>
+			<td class="table_item1">David D. Rude II</td>
+			<td class="table_item1">12/24/2010</td>
+			<td class="table_item1">Low</td>
+			<tr>			
+				
+			<td class="table_item2">Hess</td>
+			<td class="table_item2">David D. Rude II</td>
+			<td class="table_item2">12/24/2010</td>
+			<td class="table_item2">Low</td>
+			<tr>			
+			
+			<td class="table_item1">Hess</td>
+			<td class="table_item1">David D. Rude II</td>
+			<td class="table_item1">12/24/2010</td>
+			<td class="table_item1">Low</td>
+			<tr>			
+				
+			<td class="table_item2">Hess</td>
+			<td class="table_item2">David D. Rude II</td>
+			<td class="table_item2">12/24/2010</td>
+			<td class="table_item2">Low</td>
+			<tr>			
+			
+			<td class="table_item1">Hess</td>
+			<td class="table_item1">David D. Rude II</td>
+			<td class="table_item1">12/24/2010</td>
+			<td class="table_item1">Low</td>
+			<tr>			
+				
+			<td class="table_item2">Hess</td>
+			<td class="table_item2">David D. Rude II</td>
+			<td class="table_item2">12/24/2010</td>
+			<td class="table_item2">Low</td>
+			<tr>			
+
+		</table>	
+		<a href="">more reports</a>
+	</div>
+
+
 

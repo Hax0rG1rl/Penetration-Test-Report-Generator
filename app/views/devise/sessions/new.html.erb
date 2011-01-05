@@ -1,43 +1,16 @@
-<div class="background" id="background">
-	<div id = container>
-
-		<div id=logo><%= image_tag("logo.jpg")%></div>
-
-		<div id=menu class=menu>
-
-		<%= link_to "Login", new_session_path(resource_name) %> |
-		<%= link_to "Sign up", new_registration_path(resource_name) %> |
-		<%= link_to "Forgot Password", new_password_path(resource_name) %>
-		</div>
-	
-
-			<div id=clear></div>
-			<div id=appname><h1>Penetration Test Report Generator v1.0</h1></div>
-	<div id=reports>
-
-		<br>
-		<div id=repitem1 align=center>PTRG Login</div>
-		<br><center>
+	<div class="main_heading"> <font color=red size=1>//</font> login</div>
+		<div class="login_fields">
 		<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  		<p><%= f.label :username %><br />
-  		<%= f.text_field :username %></p>
-
-  		<p><%= f.label :password %><br />
-  		<%= f.password_field :password %></p>
-
-  		<% if devise_mapping.rememberable? -%>
-    	<p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
-  		<% end -%>
-
-		<p><%= f.submit "Sign in" %></p>
-		<% end %>
-
+		<table>
+			<td class="login_fields">username:</td><td><%= f.text_field :username %></td><tr>
+			<td class="login_fields">password:</td><td><%= f.password_field :password %></td><tr>
+			<td><%= f.check_box :remember_me %><font size=1>Remember me</font></td>
+			<td align=right><%= f.submit "login" %></td<tr>
+			<% end %>
+		</table>
+		<div class="login_menu">
+			<%= link_to("sign up", new_registration_path(resource_name), :class => "account_menu") %> | 
+			<%= link_to('forgot password?', new_password_path(resource_name), :class => "account_menu") %>
+		</div
+			
 	</div>
-
-	</div>
-	
-</div>
-</html>
-
-
-

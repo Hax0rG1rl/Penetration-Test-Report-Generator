@@ -7,10 +7,28 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-       <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
 
+<div class="top_cap" id="top_cap"></div>
+
+<div id="background">		
+	<div id="header">
+	
+		<div id="logos">
+			<div><%= image_tag("logo_acs.gif", :class => "acs_logo") %></div>
+			<div><%= image_tag("logo_xerox.gif", :class => "xerox_logo") %></div>				
+		</div>
+		
+		<h1 class="appname">Penetration Test Report Generator v1.0</h1>
+		
+	</div>
+
+
+<div id="content">
 <%= yield %>
+</div>
+	
+</div>
+<div class="bottom_cap" id="bottom_cap"></div>
 
 </body>
 </html>

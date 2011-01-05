@@ -7,7 +7,7 @@ class CreateVulnerabilities < ActiveRecord::Migration
 	  t.text :resolution
 	  t.string :CVE
 	  t.string :CWE	
-	  t.references :reports
+	  t.references :report
       t.timestamps
     end
   end

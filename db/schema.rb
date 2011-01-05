@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110104054645) do
+ActiveRecord::Schema.define(:version => 20110105155744) do
 
   create_table "clients", :force => true do |t|
     t.string   "name"
@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(:version => 20110104054645) do
     t.datetime "start_date"
     t.datetime "end_date"
     t.string   "cost_center"
-    t.integer  "users_id"
-    t.integer  "clients_id"
+    t.integer  "user_id"
+    t.integer  "client_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.datetime "report_due"
@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(:version => 20110104054645) do
     t.string   "report_path"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
+    t.integer  "client_id"
   end
 
   create_table "users", :force => true do |t|
@@ -64,7 +66,7 @@ ActiveRecord::Schema.define(:version => 20110104054645) do
     t.text     "resolution"
     t.string   "CVE"
     t.string   "CWE"
-    t.integer  "reports_id"
+    t.integer  "report_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
