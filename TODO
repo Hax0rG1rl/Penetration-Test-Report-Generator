@@ -1,0 +1,5 @@
+TODO:
+
+ - Clean up the CSS styles to be more generic for templating.
+ - Write multistep form. Needs Ajax because user will have to select which vulnerabilities to exclude if any.
+ - Write more XML parsers.
