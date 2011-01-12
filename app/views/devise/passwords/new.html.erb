@@ -1,12 +1,17 @@
-<h2>Forgot your password?</h2>
-
-<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <p><%= f.label :email %><br />
-  <%= f.text_field :email %></p>
-
-  <p><%= f.submit "Send me reset password instructions" %></p>
-<% end %>
-
-<%= render :partial => "devise/shared/links" %>
+	<div class="main_heading"> <font color=red size=1>//</font> forgot password?</div>
+		<div class="login_fields">
+		<%= form_for(resource, :as => resource_name, :url => password_path(resource_name)) do |f| %>
+		<table>
+			<td class="login_fields">email:</td><td><%= f.password_field :email %></td><tr>
+			<td align=right><%= f.submit "reset password" %></td<tr>
+			<% end %>
+		</table>
+		
+		<div class="login_menu">
+			<%= link_to('login', new_session_path(resource_name), :class => "account_menu") %> | 
+			<%= link_to('forgot password?', new_password_path(resource_name), :class => "account_menu") %>
+		</div>		
+	</div>
+	<center>	
+	<p style="font-size: 12px;">password reset instructions will be sent to your email</p>
+	</center>

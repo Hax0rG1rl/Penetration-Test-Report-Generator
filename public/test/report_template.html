@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<! -- Report Template -->
+<html>
+<head>
+<link rel="stylesheet" media="all" href="print.css"/>
+</head>
+<body>
+
+<!-- Cover Page -->
+	<center>
+	<div id="logos">
+		<div><img src="logo_acs.gif"></div>
+		<div><img src="logo_xerox.gif"></div>				
+	</div>
+
+	<div>Affiliated Computer Services, Inc.<br/>
+		Security Engineering Group</div>
+
+
+	<div class="title_spacer"></div>
+
+	<p id="report_title">Vulnerability Assessment and Penetration Test Report for <br/>
+		<b>SampleNET</b></p>
+
+	<hr style="color: #06a;">
+	<p>v.1.0</p>
+	<div class="cover_spacer"></div>
+
+
+	</center>
+<!-- End Cover Page -->
+
+	<p class="legal">This document is intended for ACS use only and may include confidential information
+		which is protected by law. If you are not the inteded recipient, you are notified 
+		that disclosing, copying, distributing, or taking any action in reliance on the 
+		contents of this information is strictly prohibited.</p>
+
+<div class="pagebreak"></div>
+
+
+
+	<h1>Document Details</h1>
+	<table cellpadding=2 width=600>
+		<td class="tbl_item">Document Type</td><td>Security Assessment</td><tr/>
+		<td class="tbl_item">Client</td><td>SampleNET</td><tr/>
+		<td class="tbl_item">Consultant</td><td>ACS Inc.</td><tr/>
+		<td class="tbl_item">Document Version</td><td>1.0</td><tr/>
+		<td class="tbl_item">Creation Date</td><td>01/10/2011</td>
+	</table>
+
+	<br/>
+
+	<h1>Revision History</h1>
+	<table cellpadding=2 width=600>
+		<td class="tbl_item">Version</td><td class="tbl_item">Date</td>
+		<td class="tbl_item">Author</td><td class="tbl_item">Change Description</td><tr/>
+		<td>1.0</td><td>David D. Rude II</td>
+		<td>01/10/2011</td><td>Final Draft</td>
+	</table>
+
+
+
+<div class="pagebreak"></div>
+
+
+<!-- Table of Contents -->
+<p class=footer>footer</p>
+	<h1>Table of Contents</h1>
+	<ul id="toc" class="toc">
+		<li><a href="#exec_sum" class="page_execsum">Executive Summary</a></li>
+		<li><a href="#proj_scope">Project Objectives</a>
+		<ul>
+			<li><a href="#exec_sum">Project Scope</a></li>
+		</ul></li>
+		<li><a href="#exec_sum">Target Listing</a></li>
+		<li><a href="#test_meth">Testing Methodology</a></li>
+	</ul>
+
+
+<!-- End Table of Contents -->
+<div class="pagebreak"></div>
+
+	<h1 class="heading"><a name="exec_sum">Executive Summary</a></h1>
+	<p>At the request of Buck Consultants, the ACS Penetration testing team performed the security assessment of   
+	the externally facing network infrastructure. The purpose of this assessment was to identify network and 
+	application-level security issues.</p>
+
+	<p>The objective of the analysis is to simulate an attack to assess Buck Consultants' immunity level, discover 
+	weak links and provide recommendations and guidelines to vulnerable entities discovered. This report is a report 
+	which contains sub-sections. Each Sub-section discusses in detail all relevant issues and avenues that can be 
+	used by attackers to compromise and gain unauthorized access to sensitive information.</p>
+
+	<p>Every issue includes an overview of issues found and security guidelines, which, if followed correctly, will 
+	ensure the confidentiality and integrity of the systems and applications.</p>
+
+	<p>ACS's assessment methodology includes structured review processes based on recognized “best-in-class” practices 
+	as defined by such methodologies as the ISECOM's Open Source Security Testing Methodology Manual (OSSTMM), the Open 
+	Web Application Security Project (OWASP) and ISO 27001 Information Security Standard.</p>
+
+	<p>Phase One (Footprinting and Enumeration) of the test was executed within ACS's Penetration testing Lab facility 
+	while phase two (Scanning, and Exploitation) was conducted again from the ACS's Penetration testing Lab facility.</p>
+
+	<p>This testing did not explicitly attempt Denial of Service (DoS) attacks against any of Buck Consultants systems. 
+	However, we performed the security assessment of the external network and web application as an unauthorized user. 
+	Login credentials to the web applications systems were not obtained as part of the testing process. This was a 
+	complete blind test simulating a typical external hacker's view of the organization.</p>
+
+
+
+<p id="pagenumber"></p>
+</body>
+</html>

@@ -1,21 +1,18 @@
-<h2>Sign up</h2>
-
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
-
-  <p><%= f.label :username %><br />
-  <%= f.text_field :username %></p>
-
-  <p><%= f.label :email %><br />
-  <%= f.text_field :email %></p>
-
-  <p><%= f.label :password %><br />
-  <%= f.password_field :password %></p>
-
-  <p><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></p>
-
-  <p><%= f.submit "Sign up" %></p>
-<% end %>
-
-<%= render :partial => "devise/shared/links" %>
+	<div class="main_heading"> <font color=red size=1>//</font> sign up</div>
+		<div class="login_fields">
+		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+		<table>
+			<td class="login_fields">username:</td><td><%= f.text_field :username %></td><tr>
+			<td class="login_fields">real name:</td><td><%= f.password_field :realname %></td><tr>
+			<td class="login_fields">email:</td><td><%= f.password_field :email %></td><tr>
+			<td class="login_fields">password:</td><td><%= f.password_field :password %></td><tr>
+			<td class="login_fields">confirm password:</td><td><%= f.password_field :password_confirmation %></td><tr>	
+			<td align=right><%= f.submit "sign up" %></td<tr>
+			<% end %>
+		</table>
+		<div class="login_menu">
+			<%= link_to('login', new_session_path(resource_name), :class => "account_menu") %> | 
+			<%= link_to('forgot password?', new_password_path(resource_name), :class => "account_menu") %>
+		</div>
+			
+	</div>

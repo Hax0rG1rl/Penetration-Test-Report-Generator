@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" media="all" href="print.css"/>
+
+<script>
+function subst() {
+  var vars={};
+  var x=document.location.search.substring(1).split('&');
+  for(var i in x) {var z=x[i].split('=',2);vars[z[0]] = unescape(z[1]);}
+  var x=['frompage','topage','page','webpage','section','subsection','subsubsection'];
+  for(var i in x) {
+    var y = document.getElementsByClassName(x[i]);
+    for(var j=0; j<y.length; ++j) y[j].textContent = vars[x[i]];
+  }
+}
+</script>
+</head>
+
+<body style="border:0; margin: 0;" onload="subst()">	
+
+	<span class="heading">Document Details</span>
+	<table cellpadding=2 width=600>
+		<td class="table_heading">Document Type</td><td>Security Assessment</td><tr/>
+		<td class="table_heading">Client</td><td>SampleNET</td><tr/>
+		<td class="table_heading">Consultant</td><td>ACS Inc.</td><tr/>
+		<td class="table_heading">Document Version</td><td>1.0</td><tr/>
+		<td class="table_heading">Creation Date</td><td>01/10/2011</td>
+	</table>
+
+	<br/>
+
+	<span class="heading">Revision History</span>
+	<table cellpadding=2 width=600>
+		<td class="table_heading">Version</td><td class="table_heading">Date</td>
+		<td class="table_heading">Author</td><td class="table_heading">Change Description</td><tr/>
+		<td>1.0</td><td>David D. Rude II</td>
+		<td>01/10/2011</td><td>Final Draft</td>
+	</table>
+</body>
+</html>

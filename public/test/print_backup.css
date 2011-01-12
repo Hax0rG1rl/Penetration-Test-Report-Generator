@@ -1,0 +1,146 @@
+
+body {
+	background-color: #fff;
+	margin-top: 20px;
+	font-family: arial, helvetica, sans-serif;
+}
+
+
+@page {
+  margin: 10mm;
+}
+
+.pagebreak {
+	page-break-after: always;
+	counter-increment: pagenum;
+}
+
+#logos {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#report_title {
+	font-family: Times New Roman;
+	font-size: 20pt;
+	color: #223a5e;
+}
+
+#report_title b {
+	font-size: 24pt;
+	font-family: Courier New;
+}
+table td {
+	border: 1px solid black;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+	border: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	background-color: #616D7E;
+	color: #fff;
+}
+
+#header td {
+	border: 0px;
+}
+
+.title_spacer {
+	height: 100px;
+}
+.cover_spacer {
+	height: 400px;
+}
+
+.legal {
+	font-size: 10pt;
+}
+h1 {
+	font-size: 16pt;
+	color: #06a;
+	padding: 2px;
+}
+
+.heading {
+	font-size: 16pt;
+	font-weight: bold;
+	color: #06a;
+	padding: 2px;
+}
+p {
+	font-family: helvetica, sans-serif;
+	font-size: 11pt;
+}
+
+.tbl_item {
+	background-color: #616D7E;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #fff;
+}
+
+.table_item1 
+{
+	border-color: #aaa;
+	border-width: 1px;
+	border-bottom-style: solid;
+	background-color: #d2d3a9;
+	text-align: left;
+	font-size: 10px;
+	font-weight: bold;
+	color: #797878;
+}	
+
+.table_item2 
+{
+	border-color: #aaa;
+	border-width: 1px;
+	border-bottom-style: solid;
+	background-color: #eff1ee;
+	text-align: left;
+	font-size: 10px;
+	font-weight: bold;
+	color: #797878;
+}	
+
+
+#toc {
+	font-family: Times New Roman;
+	font-size: 12pt;
+	font-weight: italic;
+}
+
+#toc a:after
+{
+}
+
+#pagenumber:after
+{
+	  counter-increment: pagenum;
+	  content: counter(pagenum); 
+}
+
+ul#toc ul {
+	list-style: decimal-leading-zero;
+}
+
+ul#toc a {
+	text-decoration: none;
+}
+
+ul#toc li {
+
+	list-style: decimal-leading-zero;
+}
+
+.footer {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Times New Roman;
+	font-size: 12pt;
+	font-weight: italic;
+  }
+

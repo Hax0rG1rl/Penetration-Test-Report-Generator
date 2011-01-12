@@ -1,0 +1,138 @@
+
+body {
+	background-color: #fff;
+	margin-top: 20px;
+	font-family: arial, helvetica, sans-serif;
+}
+
+.pagebreak 
+{
+	page-break-after: always;
+	counter-increment: pagenum;
+}
+
+
+#cover_page .logo 
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+#cover_page	.report_title 
+{
+	font-family: Times New Roman;
+	font-size: 20pt;
+	color: #223a5e;
+}
+	
+#cover_page	.report_title b 
+{
+	font-size: 24pt;
+	font-family: Courier New;
+}
+	
+#cover_page	.title_spacer { height: 100px; }
+#cover_page	.cover_spacer {	height: 400px; }
+
+#cover_page	.legal { font-size: 10pt; }
+
+
+#header table {	
+	border: 0px; 
+	background-color: #616D7E;
+}
+
+#header td 
+{ 
+	border: 0px; 
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	color: #fff;
+}
+
+
+#footer {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Times New Roman;
+	font-size: 12pt;
+	font-style: italic;
+}
+
+
+
+hr  { 
+	border: 0px;
+	height: 1px;
+	background-color: #06a;
+	color: #06a;
+
+}
+
+p {
+	font-family: helvetica, sans-serif;
+	font-size: 10pt;
+}
+
+h1 {
+	font-size: 16pt;
+	color: #06a;
+	padding: 2px;
+}
+
+code pre {
+    font-size: 10pt;
+    font-family: courier new;
+    background: #eee;
+    border: 1px solid #000;
+    width: 600px;
+    overflow:auto;
+    overflow-y:hidden;
+    margin: 0;
+    padding: 10;
+}
+
+
+/* Used in place of h1 tags if section should not be
+included in Table of Content listing */
+.heading { 
+	font-size: 16pt;
+	font-weight: bold;
+	color: #06a;
+	padding: 2px;
+}
+
+table td {
+	border: 1px solid black;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.table_item1 
+{
+	border-color: #aaa;
+	border-width: 1px;
+	border-bottom-style: solid;
+	background-color: #eff1ee;
+	text-align: left;
+	font-size: 10pt;
+	color: #797878;
+}	
+
+.table_item2 
+{
+	border-color: #aaa;
+	border-width: 1px;
+	border-bottom-style: solid;
+	background-color: #fff;
+	text-align: left;
+	font-size: 10pt;
+	color: #797878;
+}	
+
+.table_heading {
+	background-color: #616D7E;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #fff;
+}
